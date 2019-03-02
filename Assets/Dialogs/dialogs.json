@@ -1,0 +1,26 @@
+{
+    "introduction": ["You were invited to your work friend’s birthday celebration, but, well, work happened.",
+        "A meeting ran late.  The elevator was slow.  You had to wipe the toilet paper off your face.  And so on and so forth.",
+        "You arrived in the break room where you found no cake, but you instead found a pie!",
+        "It’s guarded by a gruff-looking janitor who seems ready to eat it all.",
+        "What do you do?"    
+    ],
+
+    "Door" : [
+        "This door is the only known way to this office’s break room.",
+        "Now that you have eaten pie, this door is the only known exit to this office’s break room.  You are convinced that today was a good day to pie.",
+        "You’re here to eat, not quit!"
+    ],
+
+    "Janitor-examination": [
+        "You see one of the building’s janitors.  You may have seen his legs before when you wanted alone time in a bathroom.",
+        "He smells of tobacco smoke and has a scraggly beard.",
+        "He seems hungry for pie."
+    ],
+
+    "Janitor-Talk": [
+        "The janitor looks up at you with a large spoon in his hand.  He barks at you",
+        "Janitor: Whadda ya want?"
+    ]
+
+}

@@ -60,6 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Main Game\FirstScene\Dialog_manager.cs" />
+    <Compile Include="Assets\Scripts\Main Game\FirstScene\First_Screen_States.cs" />
+    <Compile Include="Assets\Scripts\Main Game\FirstScene\Point_Click_Move.cs" />
     <Compile Include="Assets\Scripts\Start_Menu\Start_Menu_Functions.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Anderson/Documents/ExtraJam-Cherubim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
