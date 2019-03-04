@@ -60,8 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Loose\ButtonFunctions.cs" />
+    <Compile Include="Assets\Scripts\Main Game\Audio\audio.cs" />
+    <Compile Include="Assets\Scripts\Main Game\Audio\audio_Manager.cs" />
     <Compile Include="Assets\Scripts\Main Game\FirstScene\Dialog_manager.cs" />
     <Compile Include="Assets\Scripts\Main Game\FirstScene\First_Screen_States.cs" />
+    <Compile Include="Assets\Scripts\Main Game\FirstScene\Interactible_Script.cs" />
     <Compile Include="Assets\Scripts\Main Game\FirstScene\Point_Click_Move.cs" />
     <Compile Include="Assets\Scripts\Start_Menu\Start_Menu_Functions.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

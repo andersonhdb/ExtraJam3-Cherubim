@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Start_Menu_Functions : MonoBehaviour
 {
@@ -9,13 +10,17 @@ public class Start_Menu_Functions : MonoBehaviour
     private states currentState = states.menu;
     [SerializeField]
     private CanvasGroup credits_Screen;
+    [SerializeField]
+    private VerticalLayoutGroup scroller;
+    private float scrollPosition;
 
     // Start is called before the first frame update
     void Start()
     {
         currentState = states.menu;
         credits_Screen.alpha = 0;
-        credits_Screen.gameObject.active = false;
+        credits_Screen.gameObject.SetActive(false);
+        scrollPosition = scroller.gameObject.transform.position.y;
     }
 
     // Update is called once per frame
@@ -27,11 +32,15 @@ public class Start_Menu_Functions : MonoBehaviour
 
                 break;
             case states.credits:
-                if (Input.GetMouseButtonDown(0))
+                scroller.transform.Translate(0,20*Time.deltaTime,0);
+                Debug.Log(scroller.transform.position);
+                if (Input.GetMouseButtonDown(0) || scroller.transform.position.y> 710)
                 {
                     currentState = states.menu;
                     credits_Screen.alpha = 0;
-                    credits_Screen.gameObject.active = false;
+                    credits_Screen.gameObject.SetActive(false);
+                    Vector3 reset = new Vector3(scroller.transform.position.x, scrollPosition, scroller.transform.position.z);
+                    scroller.transform.position = reset;
                 }
                 break;
             default:
@@ -45,7 +54,7 @@ public class Start_Menu_Functions : MonoBehaviour
         if(currentState == states.menu)
         {
             credits_Screen.alpha = 1;
-            credits_Screen.gameObject.active = true;
+            credits_Screen.gameObject.SetActive(true);
             currentState = states.credits;
         }
     }

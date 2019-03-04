@@ -16,13 +16,12 @@ ModelImporter:
     100020: Bone.005
     100022: Bone.005_end
     100024: Bone_end
-    100026: chair
-    100028: Cube
-    100030: Cube.002
-    100032: Cube.003
-    100034: Cube.004
-    100036: //RootNode
-    100038: Spoon
+    100026: Cube
+    100028: Cube.002
+    100030: Cube.003
+    100032: Cube.004
+    100034: //RootNode
+    100036: Spoon
     400000: Armature
     400002: Bone
     400004: Bone.001
@@ -36,29 +35,26 @@ ModelImporter:
     400020: Bone.005
     400022: Bone.005_end
     400024: Bone_end
-    400026: chair
-    400028: Cube
-    400030: Cube.002
-    400032: Cube.003
-    400034: Cube.004
-    400036: //RootNode
-    400038: Spoon
-    2100000: Chair
-    2100002: No Name
-    2100004: Shirt
-    2100006: Skin
-    2100008: Hair
-    2100010: Coat
-    2300000: chair
-    3300000: chair
-    4300000: chair
-    4300002: Spoon
-    4300004: Cube.004
-    4300006: Cube.003
-    4300008: Cube.002
-    4300010: Cube
-    7400000: Armature|ArmatureAction
-    7400002: Armature|Idle
+    400026: Cube
+    400028: Cube.002
+    400030: Cube.003
+    400032: Cube.004
+    400034: //RootNode
+    400036: Spoon
+    2100000: No Name
+    2100002: Shirt
+    2100004: Skin
+    2100006: Hair
+    2100008: Coat
+    4300000: Spoon
+    4300002: Cube.004
+    4300004: Cube.003
+    4300006: Cube.002
+    4300008: Cube
+    7400000: Idle
+    7400002: KungfuMove
+    7400004: Sitted
+    7400006: Walk
     9500000: //RootNode
     13700000: Cube
     13700002: Cube.002
@@ -92,7 +88,119 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KungfuMove
+      takeName: Armature|KungfuMove
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sitted
+      takeName: Armature|Sitted
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Armature|Walk
+      firstFrame: 5
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
